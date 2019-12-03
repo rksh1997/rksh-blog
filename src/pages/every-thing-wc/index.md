@@ -12,7 +12,7 @@ It's used to count bytes, lines, characters and words in files.
 
 **wc** command accepts optional list of options and an optional list of files.
 
-If no options where specified, **wc** will print new line, word and byte counts for the specified files.
+If no options were specified, **wc** will print new line, word and byte counts for the specified files.
 
 **Example**:
 
