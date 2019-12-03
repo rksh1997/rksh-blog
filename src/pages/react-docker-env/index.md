@@ -4,11 +4,11 @@ date: "2019-12-03"
 ---
 
 ### The problem
-The output of building react app is html and javascript that lives on the browser, thus, it can't access system environment variables. You can only access then at build time, thanks to the bundler (which runs on node.js).
+The output of building react app is html and javascript that lives on the browser, thus, it can't access system's environment variables. You can only access them at build time thanks to the bundler (which runs on node.js).
 
 The problem comes when you want to pass environment variables, like the api url, when spinning a docker container of the app (at runtime). Something like this:
 
-`docker run -e "API_URL=http://my.todo.api" todoapp`
+`docker run -e "REACT_APP_API_URL=http://my.todo.api" todoapp`
 
 Which will not work even if you use `process.env.API_URL` in your react project.
 
@@ -40,7 +40,7 @@ touch $ENV_FILE_PATH
 
 ## In this file, let's attatch an object called `__ENV__` to the window object
 ## We don't close the object with } because we will put environment variables in it
-echo "window.__ENV__ = {" >> $ENV_FILE 
+echo "window.__ENV__ = {" >> $ENV_FILE_PATH 
 
 # For variable in system environment variables
 for line in `env`
@@ -56,13 +56,13 @@ do
 
     ## Print the name and the value in our __ENV__ object
     ## e.x REACT_APP_API_URL: "http://api.todo.com",
-    echo "$name: '$value'," >> $ENV_FILE
+    echo "$name: '$value'," >> $ENV_FILE_PATH
   fi
 done
 
 ## Finally, close the __ENV__ object in env.js
 
-echo "};" >> $ENV_FILE
+echo "};" >> $ENV_FILE_PATH
 
 ```
 
@@ -92,7 +92,7 @@ Now link this `env.js` file in your `index.html`
 And start using `window.__ENV__` instead of `process.env`.
 
 #### Step 2
-Run the script each time you spin up the container.
+Run the shell script each time you spin up the container.
 
 ```docker
 FROM node:10-alpine as builder
@@ -114,8 +114,8 @@ COPY --from=builder /app/resolve-env.sh /tmp
 ## Give it permission to be executed
 RUN chmod +x /tmp/resolve-env.sh
 
-## Run the script each time you spin up the container and then run nginx
+## Run the shell script each time you spin up the container and then run nginx
 CMD ["/bin/sh", "-c", "/tmp/resolve-env.sh && nginx -g \"daemon off;\""]
 ```
 
-Now try `docker run -e "API_URL=http://my.todo.api" todoapp` and whish me happy days like the one you've just had.
+Now try `docker run -e "REACT_APP_API_URL=http://my.todo.api" todoapp` and whish me happy days like the one you've just had.
