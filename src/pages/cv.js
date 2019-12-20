@@ -72,8 +72,22 @@ const CV = () => {
         </Text>
         <Title>Work Experience</Title>
         <>
-          <Subtitle>Devops Engineer - Lableb (2019/06/01 - Now)</Subtitle>
+          <Subtitle>
+            Full Stack Web Developer - Lableb (2018/02/01 - Now)
+          </Subtitle>
           <TagsList>
+            <Tag title="Javscript Runtime" color="#8BC500">
+              Node.js
+            </Tag>
+            <Tag title="UI Library" color="#53C1DE">
+              React.js
+            </Tag>
+            <Tag title="Programming Language" color="#777BB3">
+              PHP
+            </Tag>
+            <Tag title="Content Managment System" color="#464646">
+              WordPress
+            </Tag>
             <Tag title="Operating System" color="#DD4814">
               Ubuntu
             </Tag>
@@ -94,56 +108,28 @@ const CV = () => {
             </Tag>
           </TagsList>
           <Text mt="10px" mb="10px">
-            I took several Devops-ish and System administration tasks involving
-            configuring firewalls on the server and securing them begind a VPN.
-            Creating a local NAS. Automating backups...
-          </Text>
-          <Text mt="10px" mb="10px">
-            I re-deployed Lableb Search Engine using Docker Swarm.
-          </Text>
-          <Text mt="10px">
-            I set up Prometheus to monitor servers' and other apps'
-            performances.
-          </Text>
-        </>
-
-        <>
-          <Subtitle>
-            Full Stack Web Developer - Lableb (2018/02/01 - Now)
-          </Subtitle>
-          <TagsList>
-            <Tag title="Javscript Runtime" color="#8BC500">
-              Node.js
-            </Tag>
-            <Tag title="UI Library" color="#53C1DE">
-              React.js
-            </Tag>
-            <Tag title="Programming Language" color="#777BB3">
-              PHP
-            </Tag>
-            <Tag title="Content Managment System" color="#464646">
-              WordPress
-            </Tag>
-          </TagsList>
-          <Text mt="10px" mb="10px">
             I built JSON APIs for Lableb Search Engines and other services the
-            company provieded. I built a Javascript SDK for the Lableb Cloud
-            Search API and I built most of the frontend projects like the search
-            engine dashboard, cloud search docs...
+            company provided. built a Javascript SDK for the Lableb Cloud Search
+            API and built most of the frontend projects like the search engine
+            dashboard, cloud search docs...
           </Text>
           <Text mt="10px" mb="10px">
             I built a WordPress and Magento 2 plugins for Lableb Cloud Search
-            service and I built a PHP SDK for it.
+            service and built a PHP SDK for it.
           </Text>
           <Text mt="10px">
-            I set up Prometheus to monitor servers' and other apps'
-            performances.
+            In addition to full stack web development, I took some Devops and
+            System administration tasks like configuring firewalls on the
+            servers and securing them behind a VPN, creating a local NAS for the
+            team, re-deploying Lableb Search Engine with Docker Swarm,
+            monitoring servers' and services' performance with Prometheus.
           </Text>
         </>
 
         <>
           <Subtitle>
-            Full Stack Web Developer - VascularIO (2017/08/01 - 2020/01/01)
+            Full Stack Web Developer (Freelancer) - VascularIO (2017/08/01 -
+            2020/01/01)
           </Subtitle>
           <TagsList>
             <Tag title="Cloud Provider" color="#EC912D">
@@ -175,21 +161,18 @@ const CV = () => {
             </Tag>
           </TagsList>
           <Text mt="10px" mb="10px">
-            VascularIO automates build a mobile app for customers who have a
+            VascularIO automates building a mobile app for customers who have a
             Shopify store.
           </Text>
           <Text mt="10px" mb="10px">
-            I built the app dashboard and contributed to the backend JSON API.
+            I built the app dashboard and contributed to the backend JSON API
+            and was the main developer of the mobile app which I used React
+            Native and GraphQL to build it.
           </Text>
           <Text mt="10px" mb="10px">
-            I built the pipeline which automates building the Android App and
-            publishes it on Google Play.
-          </Text>
-          <Text mt="10px" mb="10px">
-            I built AWS Lambdas that authorizes our app on Shopify stores.
-          </Text>
-          <Text mt="10px">
-            I build the mobile app using React Native and GraphQL.
+            And built the pipeline which automates building the Android App and
+            publishing it on Google Play in addition to building AWS Lambdas
+            that authorizes our app on Shopify stores.
           </Text>
         </>
         <Title>Skills</Title>
@@ -200,7 +183,7 @@ const CV = () => {
             </Text>
             <Text mb="10px" mt="0">
               Node.js, Express, Mocha, Chai, GraphQL, Apollo, MongoDB,
-              Sequelize, Mongoose, MySQL, Json Web Tokens.
+              Sequelize, Mongoose, MySQL, Json Web Tokens, Golang, Mux.
             </Text>
           </li>
           <li>
@@ -208,7 +191,7 @@ const CV = () => {
               Frontend Development
             </Text>
             <Text mb="10px" mt="0">
-              React.js, Redux, Mobx, Umi & Dva, Apollo Client, Styled
+              React.js, Redux, Mobx, Gatsby, Umi & Dva, Apollo Client, Styled
               Components, Formik, Webpack, Gulp, Grunt.
             </Text>
           </li>
@@ -226,7 +209,8 @@ const CV = () => {
               Clean Code & Design Patterns
             </Text>
             <Text mb="10px" mt="0">
-              Familiar with design patterns and best practices.
+              Familiar with design patterns and capable of applying best
+              practices.
             </Text>
           </li>
           <li>
@@ -234,7 +218,7 @@ const CV = () => {
               Other Skills
             </Text>
             <Text mt="0">
-              Familiar with version management tools such as Git, some of AWS
+              Familiar with version control tools such as Git, some of AWS
               services and WordPress plugin development.
             </Text>
           </li>
@@ -268,7 +252,6 @@ const CV = () => {
           <li>
             <a href="https://github.com/FrankenSteinxD">Github</a>
           </li>
-          <li>(+963) 997818035</li>
         </List>
       </Container>
     </Layout>
