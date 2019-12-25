@@ -109,20 +109,20 @@ const CV = () => {
           </TagsList>
           <Text mt="10px" mb="10px">
             I built JSON APIs for Lableb Search Engines and other services the
-            company provided. built a Javascript SDK for the Lableb Cloud Search
-            API and built most of the frontend projects like the search engine
+            company provided. built a Javascript SDK for Lableb Cloud Search API
+            and built most of the frontend projects like the search engine
             dashboard, cloud search docs...
           </Text>
           <Text mt="10px" mb="10px">
-            I built a WordPress and Magento 2 plugins for Lableb Cloud Search
+            I built WordPress and Magento2 plugins for Lableb Cloud Search
             service and built a PHP SDK for it.
           </Text>
           <Text mt="10px">
             In addition to full stack web development, I took some Devops and
-            System administration tasks like configuring firewalls on the
-            servers and securing them behind a VPN, creating a local NAS for the
-            team, re-deploying Lableb Search Engine with Docker Swarm,
-            monitoring servers' and services' performance with Prometheus.
+            System administration tasks like configuring firewalls on servers
+            and securing them behind a VPN, creating a local NAS for the team,
+            re-deploying Lableb Search Engine with Docker Swarm, monitoring
+            servers and services' performance with Prometheus.
           </Text>
         </>
 
@@ -170,8 +170,8 @@ const CV = () => {
             Native and GraphQL to build it.
           </Text>
           <Text mt="10px" mb="10px">
-            And built the pipeline which automates building the Android App and
-            publishing it on Google Play in addition to building AWS Lambdas
+            And I wrote the pipeline which automates building the Android App
+            and publishing it on Google Play in addition to building AWS Lambdas
             that authorizes our app on Shopify stores.
           </Text>
         </>
