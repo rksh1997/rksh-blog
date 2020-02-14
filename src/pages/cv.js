@@ -64,11 +64,12 @@ const CV = () => {
   return (
     <Layout>
       <Container>
-        <Title>Profile</Title>
-        <Text>
-          Full Stack Web Developer with 3+ years of experience and Junior Devops
-          Engineer. Passionate about learning new technologies that ease the
-          life of both the developer and the customer.
+        <Title>Professional Summary</Title>
+        <Text style={{ marginTop: 10, marginBottom: 20 }}>
+          Full Stack Web Developer with 3+ years of experience especially in
+          Node.js and React.js. Passionate about new technologies and DevOps
+          Engineering with a hands-on experience in automation and cloud
+          computing
         </Text>
         <Title>Work Experience</Title>
         <>
@@ -107,23 +108,32 @@ const CV = () => {
               GitlabCI
             </Tag>
           </TagsList>
-          <Text mt="10px" mb="10px">
-            I built JSON APIs for Lableb Search Engines and other services the
-            company provided. built a Javascript SDK for Lableb Cloud Search API
-            and built most of the frontend projects like the search engine
-            dashboard, cloud search docs...
-          </Text>
-          <Text mt="10px" mb="10px">
-            I built WordPress and Magento2 plugins for Lableb Cloud Search
-            service and built a PHP SDK for it.
-          </Text>
-          <Text mt="10px">
-            In addition to full stack web development, I took some Devops and
-            System administration tasks like configuring firewalls on servers
-            and securing them behind a VPN, creating a local NAS for the team,
-            re-deploying Lableb Search Engine with Docker Swarm, monitoring
-            servers and services' performance with Prometheus.
-          </Text>
+          <List>
+            <li mt="10px" mb="10px">
+              Migrated Search engine UI from Angularjs to React.js (not launched
+              yet)
+            </li>
+            <li mt="10px" mb="10px">
+              Refactored Lableb's API into ES7 which led to cleaner and easier
+              to maintain code
+            </li>
+            <li mt="10px" mb="10px">
+              Built Lableb Cloud Search new dashboard using React.js
+            </li>
+            <li mt="10px" mb="10px">
+              In addition to my Full Stack position, I took several tasks on the
+              servers such as configuring firewalls and securing our services
+              behind a VPN
+            </li>
+            <li mt="10px" mb="10px">
+              Monitored services' health and performance with alerting system
+              using Prometheus
+            </li>
+            <li mt="10px" mb="10px">
+              Was a main part of migrating Cloud Search services to new servers
+              without a down time
+            </li>
+          </List>
         </>
 
         <>
@@ -160,20 +170,26 @@ const CV = () => {
               Shopify
             </Tag>
           </TagsList>
-          <Text mt="10px" mb="10px">
-            VascularIO automates building a mobile app for customers who have a
-            Shopify store.
-          </Text>
-          <Text mt="10px" mb="10px">
-            I built the app dashboard and contributed to the backend JSON API
-            and was the main developer of the mobile app which I used React
-            Native and GraphQL to build it.
-          </Text>
-          <Text mt="10px" mb="10px">
-            And I wrote the pipeline which automates building the Android App
-            and publishing it on Google Play in addition to building AWS Lambdas
-            that authorizes our app on Shopify stores.
-          </Text>
+          <List>
+            <li mt="10px" mb="10px">
+              Migrated Search engine UI from Angularjs to React.js (not launched
+              yet)
+            </li>
+            <li mt="10px" mb="10px">
+              Migrated Vascular.io dashboard from Angular.js to React.js
+            </li>
+            <li mt="10px" mb="10px">
+              Contributed to more than 80% of the core-backend{" "}
+            </li>
+            <li mt="10px" mb="10px">
+              Wrote the pipeline that automates building and publishing the
+              mobile app to Google Play using Fastlane and CircleCI
+            </li>
+            <li mt="10px" mb="10px">
+              Built and automated AWS Lambdas that authorize our app on Shopify
+              stores
+            </li>
+          </List>
         </>
         <Title>Skills</Title>
         <List>
@@ -227,12 +243,12 @@ const CV = () => {
         <List>
           <li>
             <Text mb="10px" mt="10px">
-              Information Technology Engineering - Damasuc University (2016 -
-              2021)
+              Information Technology Engineering - Artificial Intelligence
+              Department - University of Damascus (2016 - 2021)
             </Text>
           </li>
         </List>
-        <Title>Hoppies</Title>
+        <Title>Hobbies</Title>
         <List>
           <li>Cooking</li>
         </List>
@@ -240,9 +256,6 @@ const CV = () => {
         <List>
           <li>
             <a href="mailto:richardeo112@gmail.com">richardeo112@gmail.com</a>
-          </li>
-          <li>
-            <a href="https://rashadkokash.me">Blog</a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/rashad-kokash-847746160/">

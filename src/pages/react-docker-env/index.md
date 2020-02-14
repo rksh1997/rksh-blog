@@ -29,7 +29,7 @@ Let's create the shell script that will read environment variables and write the
 
 # Since I am going to use nginx image to serve my app, env.js should exists in /usr/share/nginx/html
 # This path points to where index.html will exist
-ENV_FILE_PATH=/usr/share/nginx/html
+ENV_FILE_PATH=/usr/share/nginx/html/env.js
 
 
 # Clear previously created env.js file
@@ -108,14 +108,14 @@ FROM nginx:alpine as server
 ## Copy your react app to nginx image
 COPY --from=builder /app/build /usr/share/nginx/html
 
-## Copy the script we've written above to /tmp
-COPY --from=builder /app/resolve-env.sh /tmp
+## Copy the script we've written above to /data
+COPY --from=builder /app/resolve-env.sh /data
 
 ## Give it permission to be executed
-RUN chmod +x /tmp/resolve-env.sh
+RUN chmod +x /data/resolve-env.sh
 
 ## Run the shell script each time you spin up the container and then run nginx
-CMD ["/bin/sh", "-c", "/tmp/resolve-env.sh && nginx -g \"daemon off;\""]
+CMD ["/bin/sh", "-c", "/data/resolve-env.sh && nginx -g \"daemon off;\""]
 ```
 
 Now try `docker run -e "REACT_APP_API_URL=http://my.todo.api" todoapp` and whish me happy days like the one you've just had.
