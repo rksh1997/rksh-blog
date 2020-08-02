@@ -6,29 +6,31 @@ import SocialLink from "./SocialLink";
 
 const CustomLink = SocialLink.withComponent(Link);
 
-function Social({ website, twitter, github, linkedin }) {
+function Social({ twitter, github, linkedin }) {
   return (
     <Wrapper>
-      {website && (
-        <SocialLink href={website} target="_blank" rel="noopener">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-            <polyline points="9 22 9 12 15 12 15 22" />
-          </svg>
-          Website
-        </SocialLink>
-      )}
-      <CustomLink to="/cv">
+      <CustomLink to="/">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+          <polyline points="9 22 9 12 15 12 15 22" />
+        </svg>
+        Website
+      </CustomLink>
+      <SocialLink
+        href="https://docs.google.com/document/d/e/2PACX-1vSRucKmAWhlNAH7tLkQ7nPUBfVjbk6Ez6WZLUgaBJhiqorV5WPiSZkw_T8f7FkTbXfvryhDoytwSpJt/pub"
+        target="_blank"
+        rel="noopener"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -44,7 +46,26 @@ function Social({ website, twitter, github, linkedin }) {
           <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
         </svg>
         Resume
-      </CustomLink>
+      </SocialLink>
+      <SocialLink
+        href="https://stackoverflow.com/users/11215806/rksh1997"
+        rel="noopener"
+        target="_blank"
+      >
+        <svg
+          fill="#000000"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 50 50"
+          width="50px"
+          height="50px"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M 40.34375 1.960938 L 37.859375 2.417969 L 41.1875 20.625 L 43.171875 20.324219 Z M 29.0625 6.664063 L 27.101563 8.078125 L 37.300781 23.035156 L 39.046875 21.796875 Z M 20.351563 15.507813 L 19.113281 17.703125 L 34.5 27 L 35.664063 25.003906 Z M 16.164063 25.171875 L 15.628906 27.402344 L 33.359375 31.894531 L 34 29.921875 Z M 9 29 L 9 47.984375 L 38.902344 48 L 38.902344 47.984375 C 38.933594 47.984375 39 29 39 29 L 37 29 L 37 46 L 11 46 L 11 29 Z M 15.171875 33.375 L 14.902344 35.339844 L 33 37 L 33.203125 35.035156 Z M 15 40 L 15 42 L 33 41.929688 L 33 40 Z"
+          />
+        </svg>
+        Stackoverflow
+      </SocialLink>
       {twitter && (
         <SocialLink href={twitter} target="_blank" rel="noopener">
           <svg
