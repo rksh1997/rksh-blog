@@ -1,5 +1,6 @@
 ---
 title: Building framework independent, database agnostic web application (Node.js)
+featuredImage: './cover.jpg'
 date: "2020-12-27"
 ---
 
