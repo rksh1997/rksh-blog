@@ -8,10 +8,10 @@ module.exports = {
   postsPerPage: 5,
   social: {
     website: "https://rashadkokash.me",
-    github: "https://github.com/FrankenSteinxD",
+    github: "https://github.com/rksh1997",
     twitter: "https://twitter.com/rashadkokash",
-    linkedin: "https://ca.linkedin.com/in/rashad-kokash-847746160/"
+    linkedin: "https://ca.linkedin.com/in/rashad-kokash-847746160/",
   },
   pathPrefix: "",
-  siteUrl: "https://FrankenSteinxD.github.io"
+  siteUrl: "https://rksh1997.github.io",
 };
